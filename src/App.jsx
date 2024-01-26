@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,20 +10,18 @@ import Events from "./components/Events";
 import Newsletter from "./components/Newsletter";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div className="outline">
+      <div className="">
         <Navbar />
-        <Hero />
-        <div className="ml-[2rem]">
-        <MeetUps />
-        <Socials />
-        <News />
-        <Community />
+
+        <div className="outline-dotted">
+          <Hero />
+          <MeetUps />
+          <Socials />
+          <News />
+          <Community />
         </div>
-       
         <Events />
         <Newsletter />
         <Footer />

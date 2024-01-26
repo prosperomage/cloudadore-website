@@ -1,51 +1,57 @@
 import React from "react";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const MeetUps = () => {
   return (
-    <div>
-      <div className="flex flex-col space-y-[40px]">
-        <div className="flex space-x-[25rem] bg-gradient-to-br from-[#141217] to-[#141217] p-6 rounded-[12px] shadow-md">
-          <div>image</div>
-          <div>
+    <div className="bg-[--grey--1]">
+      <div className="sm:grid grid-cols-1 gap-7 outline outline-blue-500 p-4">
+        {/* top column */}
+        <div className=" grid grid-cols-1 outline outline-amber-500  bg-gradient-to-br from-[#141217] to-[#141217] p-6 rounded-[12px] shadow-md md:grid-cols-2">
+          <div className="outline">image</div>
+          <div className="outline outline-green-500">
             <div>
-              <h1>
-                Explore meetups and <br /> workshops near you
+              <h1 className="text-2xl w-[260px]">
+                Explore meetups and workshops near you
               </h1>
-              <h3 className="mt-4">
+              <h3 className="mt-4 text-[#67666e]">
                 Join Cloudadore and attend inside-man meet-ups, workshops,{" "}
                 <br /> and more with other Web enthusiasts in your area.
               </h3>
             </div>
-            <div>
-              <button className="bg-gradient-to-br from-[#8a46ff] to-[#6e38cc] py-[.5rem] px-[1rem] text-[0.75rem] cursor-pointer rounded-[40px] ">
-              <span> Join us today img</span>
-               
+            <div className="mt-4 flex ">
+              <button className="flex bg-gradient-to-br from-[#8a46ff] to-[#6e38cc] py-[.5rem] px-[1rem] text-[0.75rem] cursor-pointer rounded-[40px] ">
+                <span> Join us today </span>
+                <MdOutlineArrowOutward className="w-5 h-5" />
               </button>
 
-              <button className="ml-5">Host</button>
+              <button className="ml-5 flex">
+                Host
+                <MdOutlineArrowOutward className="w-5 h-5" />
+              </button>
             </div>
           </div>
         </div>
-
-        {/* second column */}
-        <div className="flex space-x-[25rem] bg-gradient-to-br from-[#141217] to-[#141217] p-6 rounded-[12px] shadow-md">
+        {/* bottom column */}
+        <div className="grid grid-cols-1 outline outline-amber-500  bg-gradient-to-br from-[#141217] to-[#141217] p-6 rounded-[12px] shadow-md md:grid-cols-2">
           <div>
             <div>
-              <h1>
-                Ready to become a cloudadore <br /> advocate
+              <h1 className="w-[490px] text-3xl outline">
+                Ready to become a cloudadore advocate?
               </h1>
-              <h3 className="mt-4">
+              <h3 className="mt-4 text-[#67666e]">
                 Learn more about the program and become a Cloudadore <br />{" "}
                 Advocate.
               </h3>
             </div>
             <div>
-              <button className="bg-gradient-to-br from-[#8a46ff] to-[#6e38cc]  py-[.5rem] px-[1rem] text-[0.75rem] rounded-[40px] cursor-pointer  ">
-                Explore Here img
+              <button className=" flex bg-gradient-to-br from-[#8a46ff] to-[#6e38cc]  py-[.5rem] px-[1rem] text-[0.75rem] rounded-[40px] cursor-pointer  ">
+                <span className="text-[.75rem]"> Explore Here</span>
+
+                <MdOutlineArrowOutward className="w-5 h-5" />
               </button>
             </div>
           </div>
-          <div>image</div>
+          <div className="outline m-4">image</div>
         </div>
       </div>
     </div>
