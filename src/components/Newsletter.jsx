@@ -2,7 +2,9 @@ import React from 'react'
 
 const Newsletter = () => {
   return (
-    <div>Newsletter</div>
+    <div className='outline outline-blue-500 mt-5'>
+  
+    </div>
   )
 }
 
